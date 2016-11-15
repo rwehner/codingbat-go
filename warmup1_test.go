@@ -139,7 +139,7 @@ func TestNearHundred(t *testing.T) {
 	}{
 		{93, true},
 		{90, true},
-		{89, true},
+		{89, false},
 		{0, false},
 		{-101, false},
 		{-209, false},

@@ -3,8 +3,6 @@
 //package warmup1
 package warmup1
 
-import "fmt"
-
 // SleepIn takes two boolean arguments (for wekday and vacation) and returns a
 // boolean. The parameter w is true if it is a weekday, and the parameter v is
 // true if we are on vacation. We sleep in if it is not a weekday or we're on
@@ -72,18 +70,29 @@ func Makes10(a, b int) bool {
 func NearHundred(n int) bool {
 	nums := [2]int{100, 200}
 	for _, num := range nums {
-		upper, lower := num+10, num-10
-		fmt.Println(num, upper, n, lower)
-		if n < upper && n >= lower {
+		d := num - n
+		if d < 0 {
+			d = -d
+		}
+		if d <= 10 {
 			return true
 		}
 	}
 	return false
 }
 
-// Given 2 int values, return True if one is negative and one is positive. Except if the parameter
-// "negative" is True, then return True only if both are negative.
+// Given 2 int values, return true if one is negative and one is positive. Except if the parameter
+// "negative" is true, then return true only if both are negative.
 func PosNeg(a int, b int, neg bool) bool {
+	if neg {
+		if a < 0 && b < 0 {
+			return true
+		}
+		return false
+	}
+	if a < 0 && b > 0 || a > 0 && b < 0 {
+		return true
+	}
 	return false
 }
 
