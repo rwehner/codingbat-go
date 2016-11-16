@@ -3,6 +3,10 @@
 //package warmup1
 package warmup1
 
+import (
+	"strings"
+)
+
 // SleepIn takes two boolean arguments (for wekday and vacation) and returns a
 // boolean. The parameter w is true if it is a weekday, and the parameter v is
 // true if we are on vacation. We sleep in if it is not a weekday or we're on
@@ -99,7 +103,10 @@ func PosNeg(a int, b int, neg bool) bool {
 // Given a string, return a new string where "not " has been added to the front. However, if the
 // string already begins with "not", return the string unchanged.
 func NotString(s string) string {
-	return ""
+	if strings.HasPrefix(s, "not") {
+		return s
+	}
+	return "not " + s
 }
 
 // Given a non-empty string and an int n, return a new string where the char at index n has been removed.
