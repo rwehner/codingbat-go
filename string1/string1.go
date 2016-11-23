@@ -7,7 +7,7 @@ func HelloName(s string) string {
 
 // Given an "out" string length 4, such as "<<>>", and a word, return a new
 // string where the word is in the middle of the out string, e.g. "<<word>>".
-func MakeoutWord(s, out string) string {
+func MakeoutWord(out, s string) string {
 	return ""
 }
 
@@ -51,7 +51,7 @@ func Left2(s string) string {
 // italic text. In this example, the "i" tag makes <i> and </i> which surround
 // the word "Yay". Given tag and word strings, create the HTML string with tags
 // around the word, e.g. "<i>Yay</i>".
-func MakeTags(word, tag string) string {
+func MakeTags(tag, word string) string {
 	return ""
 }
 
