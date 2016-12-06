@@ -6,7 +6,7 @@ package logic2
 // than it looks and can be done without any loops.
 // http://codingbat.com/doc/practice/makebricks-introduction.html
 func MakeBricks(brick1, brick5, goal int) bool {
-	return true
+	return false
 }
 
 // Given 3 int values, a b c, return their sum. However, if any of the values is
@@ -15,6 +15,9 @@ func MakeBricks(brick1, brick5, goal int) bool {
 // int value and returns that value fixed for the teen rule. In this way, you avoid
 // repeating the teen code 3 times (i.e. "decomposition"). Define the helper below
 // and at the same indent level as the main NoTeenSum().
+func FixTeen(n int) int {
+	return 0
+}
 func NoTeenSum(a, b, c int) int {
 	return 0
 }
@@ -32,7 +35,7 @@ func LoneSum(a, b, c int) int {
 	return 0
 }
 
-// For this problem, we"ll round an int value up to the next multiple of 10 if its
+// For this problem, we'll round an int value up to the next multiple of 10 if its
 // rightmost digit is 5 or more, so 15 rounds up to 20. Alternately, round down to
 // the previous multiple of 10 if its rightmost digit is less than 5, so 12 rounds
 // down to 10. Given 3 ints, a b c, return the sum of their rounded values. To avoid
@@ -53,5 +56,5 @@ func LuckySum(a, b, c int) int {
 // a by at most 1), while the other is "far", differing from both other values by 2
 // or more.
 func CloseFar(a, b, c int) bool {
-	return true
+	return false
 }

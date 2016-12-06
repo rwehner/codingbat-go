@@ -12,3 +12,7 @@ The repo is organized with each sub-directory representing the problems in a spe
 1. Clone the repo to your local environment: `git clone https://github.com/rwehner/codingbat-go.git`
 1. Choose a directory and start coding solutions in its `<category>.go` file.
 1. Validate your solutions by running `go test -v` in the sub-directory.
+
+## Solutions
+
+Ideally, write your own. However, there is a [solutions branch](https://github.com/rwehner/codingbat-go/tree/solutions) in this repo that has my solutions. As with the tests, these solutions are likely not particularly idiomatic, but they pass the tests.

@@ -6,7 +6,8 @@ func DoubleChar(s string) string {
 }
 
 // Return the number of times that the string "code" appears anywhere in the
-// given string, except we"ll accept any letter for the "d", so "cope" and "cooe" count.
+// given string, except we'll accept any letter for the "d", so "cope" and "cooe" count.
+// Try not to use regex
 func CountCode(s string) int {
 	return 0
 }
@@ -21,17 +22,17 @@ func CountHi(s string) int {
 //computation should not be "case sensitive"). Note: s.lower() returns the
 // lowercase version of a string.
 func EndOther(a, b string) bool {
-	return true
+	return false
 }
 
 // Return true if the string "cat" and "dog" appear the same number of times
 // in the given string.
 func CatDog(s string) bool {
-	return true
+	return false
 }
 
 // Return true if the given string contains an appearance of "xyz" where the xyz
 // is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
 func XyzThere(s string) bool {
-	return true
+	return false
 }
