@@ -12,20 +12,14 @@ import (
 // true if we are on vacation. We sleep in if it is not a weekday or we're on
 // vacation. Return true if we sleep in.
 func SleepIn(weekday, vacation bool) bool {
-	if vacation || !weekday {
-		return true
-	}
-	return false
+	return vacation || !weekday
 }
 
 // We have two monkeys, a and b, and the parameters a and b indicate
 // if each is smiling. We are in trouble if they are both smiling or if neither
 // of them is smiling. Return True if we are in trouble.
 func MonkeyTrouble(a, b bool) bool {
-	if a == b {
-		return true
-	}
-	return false
+	return a == b
 }
 
 // Given two int values, return their sum. Unless the two values are the same, then
