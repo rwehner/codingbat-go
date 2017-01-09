@@ -58,10 +58,7 @@ func ParrotTrouble(t bool, h int) bool {
 
 // Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
 func Makes10(a, b int) bool {
-	if a == 10 || b == 10 || a+b == 10 {
-		return true
-	}
-	return false
+	return a == 10 || b == 10 || a+b == 10
 }
 
 //Given an int n, return true if it is within 10 of 100 or 200.
